@@ -1,0 +1,10 @@
+<h1>Result</h1>
+<% if @included === false %>
+  <p>Sorry <strong><%= @attempt.upcase %></strong> can't be built out of <%= @letters.split(' ').join(', ') %></p>
+<% elsif @eng_word %>
+  <p><strong>Congratulations!</strong> <%= @attempt.upcase %> is a valid English word!</p>
+<% else %>
+  <p>Sorry but <strong><%= @attempt.upcase %></strong> does not seem to be a valid English word...</p>
+<% end %>
+
+<p><%= link_to "Play again", new_path %></p>

@@ -1,0 +1,16 @@
+.letters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.letter {
+  color: #fff;
+  padding: 10px 20px;
+  width: 25px;
+  font-size: 30px;
+  border-radius: 2px;
+  margin: 10px;
+  background: #3498db;
+  box-shadow: 5px 10px 8px rgba(144, 144, 144, 0.117);
+}
